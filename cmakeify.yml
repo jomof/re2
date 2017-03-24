@@ -8,7 +8,10 @@ android:
 iOS:
   lib: libre2.a
 example: |
-   #include <re2/re2.h>
+  #include <re2/re2.h>
+  void test() {
+    RE2::FullMatch("hello", "h.*o");
+  }
 
    
 
