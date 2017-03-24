@@ -5,6 +5,6 @@ android:
     cppFlags:
     - -DCMAKE_CXX_FLAGS=-std=c++11
     versions: [r13b]
-    runtimes: [c++, gnustl, stlport]
+    runtimes: [c++]
     platforms: [12, 21]
 
