@@ -1,4 +1,5 @@
 targets: [iOS, android]
+includes: [re2]
 android:
   lib: libre2.a
   ndk:
