@@ -10,7 +10,7 @@ iOS:
 example: |
   #include <re2/re2.h>
   void test() {
-    RE2::FullMatch("hello", "h.*o");
+    RE2::FullMatch(\"hello\", \"h.*o\");
   }
 
    
