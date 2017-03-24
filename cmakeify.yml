@@ -1,15 +1,13 @@
 targets: [iOS, android]
 android:
-  lib: libsqlite.a
+  lib: libre2.a
   ndk:
     runtimes: [c++, gnustl, stlport]
     platforms: [12, 21]
 iOS:
-  lib: libsqlite.a
+  lib: libre2.a
 example: |
-   #include <sqlite3.h>
-   void test() {
-     sqlite3_initialize();
-   }
+   #include <re2.h>
+
    
 
