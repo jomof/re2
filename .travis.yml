@@ -1,8 +1,6 @@
 matrix: 
   include: 
-  - env: TARGET_OS=android
-    jdk: oraclejdk7
-    os: linux
+  - os: linux
     script:
     - ./cmakeify --group-id com.github.jomof --artifact-id sqlite --target-version ${TRAVIS_TAG:-0.0.0}
     - ./cdep
