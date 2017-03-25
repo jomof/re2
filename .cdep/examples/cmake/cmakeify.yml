@@ -7,4 +7,3 @@ android:
     versions: [r13b]
     runtimes: [c++]
     platforms: [12, 21]
-
