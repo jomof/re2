@@ -1,4 +1,4 @@
-targets: [iOS, android]
+targets: [android]
 includes: [re2]
 android:
   lib: libre2.a
