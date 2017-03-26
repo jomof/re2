@@ -11,6 +11,13 @@ matrix:
     
   - env: TARGET_OS=linux
     os: linux
+    addons:
+      apt:
+        sources:
+        - ubuntu-toolchain-r-test
+        packages:
+        - gcc-4.8
+        - g++-4.8
     script:
     - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os linux
     - ./cdep
