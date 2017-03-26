@@ -9,24 +9,24 @@ matrix:
     - ./cdep
     - ./cmakeify -wf .cdep/examples/cmake --target-os android
     
-  - env: TARGET_OS=linux
-    os: linux
-    addons:
-      apt:
-        sources:
-        - ubuntu-toolchain-r-test
-        packages:
-        - gcc-4.8
-        - g++-4.8
-    script:
-    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os linux
-    - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake --target-os linux
+#  - env: TARGET_OS=linux
+#    os: linux
+#    addons:
+#      apt:
+#        sources:
+#        - ubuntu-toolchain-r-test
+#        packages:
+#        - gcc-4.8
+#        - g++-4.8
+#    script:
+#    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os linux
+#    - ./cdep
+#    - ./cmakeify -wf .cdep/examples/cmake --target-os linux
     
-  - env: TARGET_OS=iOS
-    os: osx
-    script:
-    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os iOS
-    - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake --target-os iOS
+#  - env: TARGET_OS=iOS
+#    os: osx
+#    script:
+#    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os iOS
+#    - ./cdep
+#    - ./cmakeify -wf .cdep/examples/cmake --target-os iOS
  
