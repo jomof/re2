@@ -1,12 +1,10 @@
 targets: [android]
 includes: [re2]
+buildTarget: re2
 android:
-  lib: libre2.a
   ndk:
     runtimes: [c++]
     platforms: [12, 21]
-iOS:
-  lib: libre2.a
 example: |
   #include <re2/re2.h>
   void test() {
