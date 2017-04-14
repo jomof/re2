@@ -1,7 +1,6 @@
 targets: [iOS, android]
 includes: [include]
 badges: no
-cmakeFlags: -DCMAKE_CXX_FLAGS=-std=c++11
 android:
   ndk:
     versions: [r13b]
