@@ -5,9 +5,9 @@ matrix:
   - env: TARGET_OS=android
     os: linux
     script:
-    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0} --target-os android
+    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0}
     - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake --target-os android
+    - ./cmakeify -wf .cdep/examples/cmake--group-id com.github.jomof --artifact-id examples-re2 --target-version ${TRAVIS_TAG:-0.0.0}
     
 #  - env: TARGET_OS=linux
 #    os: linux
