@@ -9,6 +9,8 @@ matrix:
     - ./cdep fullfill build/Android ${TRAVIS_TAG:-0.0.0} cdep-manifest.yml 
     - ./cdep
     - ./cmakeify -wf .cdep/examples/cmake
+    - git clone https://github.com/jomof/tools
+    - tools/github_release_folder jomof re2 .cdep/fullfill/output/layout
     
 #  - env: TARGET_OS=linux
 #    os: linux
