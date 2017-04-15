@@ -1,0 +1,29 @@
+coordinate:
+  groupId: com.github.jomof
+  artifactId: re2
+  version: ${version}
+interfaces:
+  headers:
+    file: ${source}/android-12/abi-x86/header/include/...
+    include: include
+    requires:
+    - cxx_deleted_functions
+    - cxx_variadic_templates
+android:
+  archives:
+  - file: ${source}/android-21/abi-armeabi/redist/lib/armeabi/libre2.a
+  - file: ${source}/android-21/abi-armeabi-v7a/redist/lib/armeabi-v7a/libre2.a
+  - file: ${source}/android-21/abi-x86_64/redist/lib/x86_64/libre2.a
+  - file: ${source}/android-21/abi-arm64-v8a/redist/lib/arm64-v8a/libre2.a
+  - file: ${source}/android-21/abi-x86/redist/lib/x86/libre2.a
+  - file: ${source}/android-12/abi-armeabi/redist/lib/armeabi/libre2.a
+  - file: ${source}/android-12/abi-armeabi-v7a/redist/lib/armeabi-v7a/libre2.a
+  - file: ${source}/android-12/abi-x86/redist/lib/x86/libre2.a
+
+example: |
+  #include <re2/re2.h>
+  void test() {
+    RE2::FullMatch("hello", "h.*o");
+  }
+
+   
