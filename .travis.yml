@@ -5,7 +5,7 @@ matrix:
   - env: TARGET_OS=android
     os: linux
     script:
-    - ./cmakeify --group-id com.github.jomof --artifact-id re2 --target-version ${TRAVIS_TAG:-0.0.0}
+    - ./cmakeify
     - ./cdep fullfill build/Android ${TRAVIS_TAG:-0.0.0} cdep-manifest.yml 
     - ./cdep
     - ./cmakeify -wf .cdep/examples/cmake --group-id com.github.jomof --artifact-id examples-re2 --target-version ${TRAVIS_TAG:-0.0.0}
