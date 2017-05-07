@@ -2,6 +2,9 @@ coordinate:
   groupId: com.github.jomof
   artifactId: re2
   version: ${version}
+license:
+  name: BSD 3-Clause
+  url: https://raw.githubusercontent.com/google/re2/master/LICENSE
 interfaces:
   headers:
     file: ${source}/android-12/abi-x86/header/include/...
