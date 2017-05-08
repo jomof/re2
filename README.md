@@ -1,3 +1,12 @@
+[![Build Status](https://travis-ci.org/jomof/re2.svg?branch=master)](https://travis-ci.org/jomof/re2)
+
+# CDep Packaging of RE2 Regular Expression Libraries
+Include these in your cdep.yml file
+```
+- compile: com.github.jomof:re2:17.3.1-rev13
+```
+Go [here](https://github.com/google/cdep) to get started using CDep package manager.
+
 This is the source code repository for RE2, a regular expression library.
 
 For documentation about how to install and use RE2,
