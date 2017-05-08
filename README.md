@@ -7,6 +7,7 @@ Include these in your cdep.yml file
 ```
 Go [here](https://github.com/google/cdep) to get started using CDep package manager.
 
+# Original README follows
 This is the source code repository for RE2, a regular expression library.
 
 For documentation about how to install and use RE2,
